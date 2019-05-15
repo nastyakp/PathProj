@@ -1,0 +1,21 @@
+<h1>Дерево директорий</h1>
+<p><%= @path %></p>
+<% def td_key(mini_hash, deep) %>
+  <% deep += 1 %>
+  <% mini_hash.each do |key, value| %>
+    <% deep.times do %>
+      <span class="space"></span>
+    <% end %>
+    <% if value.length != 0 %>
+      <span class="arrow">▼</span>
+    <% else %>
+      <span class="minispace"></span>
+    <% end %>
+    <span><%= key %></span>
+    <br>
+    <% if value.length != 0 %>
+      <% td_key(value, deep) %>
+    <% end %>
+  <% end %>
+<% end %>
+<% td_key(@tree, -1) %>  
