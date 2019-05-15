@@ -1,24 +1,17 @@
-# README
+Тестовое задание:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Напишите приложение на Ruby on Rails которое сможет:
 
-Things you may want to cover:
+1.       Выводить директорию и дерево поддиректорий
+2.       Выводить список файлов директории
+3.       Вынести основные настройки в конфигурационный файл
+ 
 
-* Ruby version
+В конфигурационный файл нужно вынести путь к корневой директории.
 
-* System dependencies
+Приложение должно принимать в адресной строке команду и путь к поддиректории, таким образом должны работать следующие пути
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1.       dir/ - выводит дерево директорий начиная от корневой директории
+2.       files/ - выводит список файлов корневой директории
+3.       dir/temp/ - выводит дерево поддиректории temp/ корневой директории
+4.       files/views/layout/ - выведет список файлов в корн. дир./views/layout/
